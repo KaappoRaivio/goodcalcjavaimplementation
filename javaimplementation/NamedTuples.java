@@ -74,27 +74,27 @@ public class NamedTuples {
             this.rightOperand = rightOperand;
         }
 
-        public String getLeftBoundary() {
+        public int getLeftBoundary() {
             return leftBoundary;
         }
 
-        public void setLeftBoundary(String leftBoundary) {
+        public void setLeftBoundary(int leftBoundary) {
             this.leftBoundary = leftBoundary;
         }
 
-        public String getRightBoundary() {
+        public int getRightBoundary() {
             return rightBoundary;
         }
 
-        public void setRightBoundary(String rightBoundary) {
+        public void setRightBoundary(int rightBoundary) {
             this.rightBoundary = rightBoundary;
         }
 
         private String rightOperand;
-        private String leftBoundary;
-        private String rightBoundary;
+        private int leftBoundary;
+        private int rightBoundary;
 
-        public Calculation (String leftOperand, String operation, String rightOperand, String leftBoundary, String rightBoundary) {
+        public Calculation (String leftOperand, String operation, String rightOperand, int leftBoundary, int rightBoundary) {
             this.leftOperand = leftOperand;
             this.operation = operation;
             this.rightOperand = rightOperand;
@@ -102,5 +102,15 @@ public class NamedTuples {
             this.rightBoundary = rightBoundary;
         }
 
+        @Override
+        public String toString() {
+            return "Calculation{" +
+                    "leftOperand='" + leftOperand + '\'' +
+                    ", operation='" + operation + '\'' +
+                    ", rightOperand='" + rightOperand + '\'' +
+                    ", leftBoundary=" + leftBoundary +
+                    ", rightBoundary=" + rightBoundary +
+                    '}';
+        }
     }
 }
