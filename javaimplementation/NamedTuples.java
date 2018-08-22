@@ -104,13 +104,13 @@ public class NamedTuples {
 
         @Override
         public String toString() {
-            return "Calculation{" +
+            return "Calculation (" +
                     "leftOperand='" + leftOperand + '\'' +
                     ", operation='" + operation + '\'' +
                     ", rightOperand='" + rightOperand + '\'' +
                     ", leftBoundary=" + leftBoundary +
                     ", rightBoundary=" + rightBoundary +
-                    '}';
+                    ')';
         }
     }
 }
